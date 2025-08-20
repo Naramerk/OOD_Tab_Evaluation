@@ -275,8 +275,12 @@ OOD_Tab_Evaluation/
 If you use this code in your research, please cite:
 
 ```bibtex
-@article{ood_tabular_evaluation,
-  title={Meta-Feature Based Distribution Shift Protocol for Tabular Data},
+@inproceedings{Deeva2025,
+  author = {Deeva, Irina and Amerkhanova, Nargiza},
+  title = {Evaluating robustness of tabular models under meta-features based shifts},
+  booktitle = {Proceedings of the 39th Annual Conference on Neural Information Processing Systems (NeurIPS '25)},
+  year = {2025},
+  address = {San Diego, USA},
 }
 ```
 
