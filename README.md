@@ -1,4 +1,4 @@
-# OOD Tabular Evaluation: Meta-Feature Based Distribution Shift Protocol
+# Evaluating robustness of tabular models under meta-features based shifts
 
 ## 🔍 Overview
 
