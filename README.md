@@ -181,9 +181,6 @@ Performance on synthetic data generated with optimized meta-features:
 # Clone the repository
 git clone https://github.com/ITMO-NSS-team/OOD_Tab_Evaluation.git
 cd OOD_Tab_Evaluation
-
-# Install dependencies
-pip install -r requirements.txt
 ```
 
 ## 🔧 Reproducing Experiments
@@ -250,13 +247,6 @@ OOD_Tab_Evaluation/
 ├── data/                        # Dataset files
 └── README.md                    # This file
 ```
-
-## 🎯 Key Findings
-
-1. **Controlled OOD Evaluation**: Meta-feature based splits enable systematic investigation of model behavior under distributional shifts
-2. **Robust Model Performance**: IRM and DRO models show varying degrees of robustness across different shift types
-3. **Interpretable Shifts**: Meta-features provide semantic interpretation of distributional differences
-4. **Reproducible Protocol**: The evolutionary approach ensures consistent and reproducible OOD evaluation
 
 ## 📚 Dependencies
 
