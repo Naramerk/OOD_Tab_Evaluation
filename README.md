@@ -108,6 +108,12 @@ graph TD
 | **Random Split** | electricity | 0.798 ± 0.00 | 0.832 ± 0.00 | 0.813 ± 0.01 | 0.814 ± 0.02 |
 | **Mut_inf** | electricity | **0.735** ± 0.02 | **0.749** ± 0.01 | **0.795** ± 0.02 | **0.766** ± 0.01 |
 
+### 📉 F1 Results on Real OOD Test Sets
+
+| Dataset | LR | XGB | DRO | IRM |
+|---------|----|----|----|----|
+| electricity | 0.5961 | 0.6332 | 0.6551 | 0.6461 |
+| taxi | 0.6873 | 0.6549 | 0.6366 | 0.6538 |
 
 ## 2️⃣ Synthetic Data Generation
 
@@ -163,12 +169,6 @@ graph TD
     
     linkStyle default stroke:#287786,stroke-width:1.5px
 ```
-### F1 Results on Real OOD Test Sets
-
-| Dataset | LR | XGB | DRO | IRM |
-|---------|----|----|----|----|
-| electricity | 0.5961 | 0.6332 | 0.6551 | 0.6461 |
-| taxi | 0.6873 | 0.6549 | 0.6366 | 0.6538 |
 
 ### 📊 Experimental Results: Synthetic Data Generation Analysis
 
