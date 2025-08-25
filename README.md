@@ -163,6 +163,12 @@ graph TD
     
     linkStyle default stroke:#287786,stroke-width:1.5px
 ```
+### F1 Results on Real OOD Test Sets
+
+| Dataset | LR | XGB | DRO | IRM |
+|---------|----|----|----|----|
+| electricity | 0.5961 | 0.6332 | 0.6551 | 0.6461 |
+| taxi | 0.6873 | 0.6549 | 0.6366 | 0.6538 |
 
 ### 📊 Experimental Results: Synthetic Data Generation Analysis
 
