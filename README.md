@@ -56,6 +56,9 @@ The optimization uses a genetic algorithm with:
 - **Crossover**: Index exchange between individuals while maintaining test set size
 - **Mutation**: Index replacement with available indices from train set
 
+### Evaluation Metric
+All results below are reported using the F1 score metric.
+
 ### Approach Diagram
 
 ```mermaid
@@ -107,13 +110,6 @@ graph TD
 | **Class_conc** | taxi | **0.526** ± 0.10 | **0.592** ± 0.07 | **0.773** ± 0.10 | **0.505** ± 0.10 |
 | **Random Split** | electricity | 0.798 ± 0.00 | 0.832 ± 0.00 | 0.813 ± 0.01 | 0.814 ± 0.02 |
 | **Mut_inf** | electricity | **0.735** ± 0.02 | **0.749** ± 0.01 | **0.795** ± 0.02 | **0.766** ± 0.01 |
-
-### 📉 F1 Results on Real OOD Test Sets
-
-| Dataset | LR | XGB | DRO | IRM |
-|---------|----|----|----|----|
-| electricity | 0.5961 | 0.6332 | 0.6551 | 0.6461 |
-| taxi | 0.6873 | 0.6549 | 0.6366 | 0.6538 |
 
 ## 2️⃣ Synthetic Data Generation
 
@@ -174,10 +170,18 @@ graph TD
 
 Performance on synthetic data generated with optimized meta-features:
 
-| Dataset | LR | XGB | DRO | IRM |
+| Dataset (meta-features) | LR | XGB | DRO | IRM |
 |---------|----|-----|-----|-----|
 | **electricity** (mut-inf, class-conc, iq-range) | 0.613 ± 0.08 | 0.641 ± 0.09 | 0.587 ± 0.08 | 0.613 ± 0.08 |
 | **electricity** (mut-inf, class-conc) | 0.611 ± 0.01 | 0.625 ± 0.01 | 0.589 ± 0.01 | 0.632 ± 0.02 |
+
+Performance on **Real** OOD Test Set:
+| Dataset | LR | XGB | DRO | IRM |
+|---------|----|----|----|----|
+| electricity | 0.5961 | 0.6332 | 0.6551 | 0.6461 |
+
+ 📉 We can see that the gap between synthetic and real shifted performance has significantly decreased.
+ 
 
 ## 🚀 Quick Start
 
